@@ -1,0 +1,130 @@
+{
+  "path.basename": {
+    "fn": "output({ result: path.basename(input.path, input.ext) })",
+    "ports": {
+      "input": {
+        "path": {
+          "type": "string"
+        },
+        "ext": {
+          "type": "string"
+        }
+      },
+      "output": {
+        "result": {
+          "type": "string"
+        }
+      }
+    },
+    "description": "Path basename",
+    "name": "path.basename"
+  },
+  "path.dirname": {
+    "fn": "output({ result: path.dirname(input.path) })",
+    "ports": {
+      "input": {
+        "path": {
+          "type": "string"
+        }
+      },
+      "output": {
+        "result": {
+          "type": "string"
+        }
+      }
+    },
+    "description": "Path dirname",
+    "name": "path.dirname"
+  },
+  "path.extname": {
+    "fn": "output({ result: path.extname(input.path) })",
+    "ports": {
+      "input": {
+        "path": {
+          "type": "string"
+        }
+      },
+      "output": {
+        "result": {
+          "type": "string"
+        }
+      }
+    },
+    "description": "Path extname",
+    "name": "path.extname"
+  },
+  "path.join": {
+    "fn": "output({ result: path.join(input.path) })",
+    "ports": {
+      "input": {
+        "path": {
+          "type": "string"
+        }
+      },
+      "output": {
+        "result": {
+          "type": "string"
+        }
+      }
+    },
+    "description": "Path join",
+    "name": "path.join"
+  },
+  "path.normalize": {
+    "fn": "output({ result: path.normalize(input.path) })",
+    "ports": {
+      "input": {
+        "path": {
+          "type": "string"
+        }
+      },
+      "output": {
+        "result": {
+          "type": "string"
+        }
+      }
+    },
+    "description": "Path normalize",
+    "name": "path.normalize"
+  },
+  "path.relative": {
+    "fn": "output({ result: path.relative(input.from, input.to) })",
+    "ports": {
+      "input": {
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        }
+      },
+      "output": {
+        "result": {
+          "type": "string"
+        }
+      }
+    },
+    "description": "Path relative",
+    "name": "path.relative"
+  },
+  "path.resolve": {
+    "fn": "output({ result: path.resolve(input.from, input.to) })",
+    "ports": {
+      "input": {
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        }
+      },
+      "output": {
+        "result": {
+          "type": "string"
+        }
+      }
+    },
+    "description": "Path resolve",
+    "name": "path.resolve"
+  }
+}
