@@ -1,0 +1,16 @@
+{
+  "name": "path.normalize",
+  "description": "Path normalize",
+  "ports": {
+    "input": {
+      "path": {
+        "type": "string"
+      }
+    },
+    "output": {
+      "result": {
+        "type": "string"
+      }
+    }
+  }
+}

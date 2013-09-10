@@ -1,0 +1,19 @@
+{
+  "name": "path.basename",
+  "description": "Path basename",
+  "ports": {
+    "input": {
+      "path": {
+        "type": "string"
+      },
+      "ext": {
+        "type": "string"
+      }
+    },
+    "output": {
+      "result": {
+        "type": "string"
+      }
+    }
+  }
+}

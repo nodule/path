@@ -1,0 +1,16 @@
+{
+  "name": "path.dirname",
+  "description": "Path dirname",
+  "ports": {
+    "input": {
+      "path": {
+        "type": "string"
+      }
+    },
+    "output": {
+      "result": {
+        "type": "string"
+      }
+    }
+  }
+}

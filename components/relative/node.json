@@ -1,0 +1,19 @@
+{
+  "name": "path.relative",
+  "description": "Path relative",
+  "ports": {
+    "input": {
+      "from": {
+        "type": "string"
+      },
+      "to": {
+        "type": "string"
+      }
+    },
+    "output": {
+      "result": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "path.extname",
+  "description": "Path extname",
+  "ports": {
+    "input": {
+      "path": {
+        "type": "string"
+      }
+    },
+    "output": {
+      "result": {
+        "type": "string"
+      }
+    }
+  }
+}

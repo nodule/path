@@ -1,0 +1,19 @@
+{
+  "name": "path.resolve",
+  "description": "Path resolve",
+  "ports": {
+    "input": {
+      "from": {
+        "type": "string"
+      },
+      "to": {
+        "type": "string"
+      }
+    },
+    "output": {
+      "result": {
+        "type": "string"
+      }
+    }
+  }
+}
