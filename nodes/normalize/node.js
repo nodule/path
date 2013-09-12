@@ -1,1 +1,1 @@
-output({ result: path.normalize(input.path) })
+output = { result: path.normalize(input.path) }

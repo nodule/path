@@ -1,1 +1,1 @@
-output({ result: path.basename(input.path, input.ext) })
+output = { result: path.basename(input.path, input.ext) }
