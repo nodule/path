@@ -1,5 +1,5 @@
 {
-  "name": "path.resolve",
+  "name": "resolve",
   "description": "Path resolve",
   "ports": {
     "input": {

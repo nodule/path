@@ -1,5 +1,5 @@
 {
-  "name": "path.relative",
+  "name": "relative",
   "description": "Path relative",
   "ports": {
     "input": {

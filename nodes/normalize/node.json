@@ -1,5 +1,5 @@
 {
-  "name": "path.normalize",
+  "name": "normalize",
   "description": "Path normalize",
   "ports": {
     "input": {

@@ -1,5 +1,5 @@
 {
-  "path.basename": {
+  "basename": {
     "fn": "output = { result: path.basename(input.path, input.ext) }\n",
     "ports": {
       "input": {
@@ -17,9 +17,9 @@
       }
     },
     "description": "Path basename",
-    "name": "path.basename"
+    "name": "basename"
   },
-  "path.dirname": {
+  "dirname": {
     "fn": "output = { result: path.dirname(input.path) }\n",
     "ports": {
       "input": {
@@ -34,9 +34,9 @@
       }
     },
     "description": "Path dirname",
-    "name": "path.dirname"
+    "name": "dirname"
   },
-  "path.extname": {
+  "extname": {
     "fn": "output = { result: path.extname(input.path) }\n",
     "ports": {
       "input": {
@@ -51,9 +51,9 @@
       }
     },
     "description": "Path extname",
-    "name": "path.extname"
+    "name": "extname"
   },
-  "path.join": {
+  "join": {
     "fn": "output = { result: path.join(input.path) }\n",
     "ports": {
       "input": {
@@ -68,9 +68,9 @@
       }
     },
     "description": "Path join",
-    "name": "path.join"
+    "name": "join"
   },
-  "path.normalize": {
+  "normalize": {
     "fn": "output = { result: path.normalize(input.path) }\n",
     "ports": {
       "input": {
@@ -85,9 +85,9 @@
       }
     },
     "description": "Path normalize",
-    "name": "path.normalize"
+    "name": "normalize"
   },
-  "path.relative": {
+  "relative": {
     "fn": "output = { result: path.relative(input.from, input.to) }\n",
     "ports": {
       "input": {
@@ -105,9 +105,9 @@
       }
     },
     "description": "Path relative",
-    "name": "path.relative"
+    "name": "relative"
   },
-  "path.resolve": {
+  "resolve": {
     "fn": "output = { result: path.resolve(input.from, input.to) }\n",
     "ports": {
       "input": {
@@ -125,6 +125,6 @@
       }
     },
     "description": "Path resolve",
-    "name": "path.resolve"
+    "name": "resolve"
   }
 }

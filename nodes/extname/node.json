@@ -1,5 +1,5 @@
 {
-  "name": "path.extname",
+  "name": "extname",
   "description": "Path extname",
   "ports": {
     "input": {

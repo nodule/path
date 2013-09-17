@@ -1,5 +1,5 @@
 {
-  "name": "path.dirname",
+  "name": "dirname",
   "description": "Path dirname",
   "ports": {
     "input": {
