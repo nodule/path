@@ -16,21 +16,7 @@
   "engines": {
     "node": ">=0.6.0"
   },
-  "main": "nodes",
-  "chix": {
-    "dependencies": [
-      "path"
-    ],
-    "components": [
-      "basename",
-      "dirname",
-      "extname",
-      "join",
-      "normalize",
-      "relative",
-      "resolve"
-    ]
-  },
+  "main": "x",
   "scripts": {
   }
 }
