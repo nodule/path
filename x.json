@@ -12,10 +12,10 @@
     "type": "git",
     "url": "https://github.com/psichi/chix-path.git"
   },
-  "nodes": {
-    "basename": {
-      "fn": "output = { result: path.basename(input.path, input.ext) }\n",
-      "ns": "path",
+  "nodes": [
+    {
+      "name": "basename",
+      "description": "Path basename",
       "ports": {
         "input": {
           "path": {
@@ -31,30 +31,11 @@
           }
         }
       },
-      "description": "Path basename",
-      "name": "basename"
+      "ns": "path"
     },
-    "dirname": {
-      "fn": "output = { result: path.dirname(input.path) }\n",
-      "ns": "path",
-      "ports": {
-        "input": {
-          "path": {
-            "type": "string"
-          }
-        },
-        "output": {
-          "result": {
-            "type": "string"
-          }
-        }
-      },
+    {
+      "name": "dirname",
       "description": "Path dirname",
-      "name": "dirname"
-    },
-    "extname": {
-      "fn": "output = { result: path.extname(input.path) }\n",
-      "ns": "path",
       "ports": {
         "input": {
           "path": {
@@ -67,12 +48,11 @@
           }
         }
       },
+      "ns": "path"
+    },
+    {
+      "name": "extname",
       "description": "Path extname",
-      "name": "extname"
-    },
-    "join": {
-      "fn": "output = { result: path.join(input.path) }\n",
-      "ns": "path",
       "ports": {
         "input": {
           "path": {
@@ -85,12 +65,11 @@
           }
         }
       },
+      "ns": "path"
+    },
+    {
+      "name": "join",
       "description": "Path join",
-      "name": "join"
-    },
-    "normalize": {
-      "fn": "output = { result: path.normalize(input.path) }\n",
-      "ns": "path",
       "ports": {
         "input": {
           "path": {
@@ -103,18 +82,14 @@
           }
         }
       },
+      "ns": "path"
+    },
+    {
+      "name": "normalize",
       "description": "Path normalize",
-      "name": "normalize"
-    },
-    "relative": {
-      "fn": "output = { result: path.relative(input.from, input.to) }\n",
-      "ns": "path",
       "ports": {
         "input": {
-          "from": {
-            "type": "string"
-          },
-          "to": {
+          "path": {
             "type": "string"
           }
         },
@@ -124,12 +99,11 @@
           }
         }
       },
+      "ns": "path"
+    },
+    {
+      "name": "relative",
       "description": "Path relative",
-      "name": "relative"
-    },
-    "resolve": {
-      "fn": "output = { result: path.resolve(input.from, input.to) }\n",
-      "ns": "path",
       "ports": {
         "input": {
           "from": {
@@ -145,10 +119,29 @@
           }
         }
       },
+      "ns": "path"
+    },
+    {
+      "name": "resolve",
       "description": "Path resolve",
-      "name": "resolve"
+      "ports": {
+        "input": {
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          }
+        },
+        "output": {
+          "result": {
+            "type": "string"
+          }
+        }
+      },
+      "ns": "path"
     }
-  },
+  ],
   "twigs": {
     "ns": "path"
   }
