@@ -15,6 +15,7 @@
   "nodes": {
     "basename": {
       "fn": "output = { result: path.basename(input.path, input.ext) }\n",
+      "ns": "path",
       "ports": {
         "input": {
           "path": {
@@ -35,6 +36,7 @@
     },
     "dirname": {
       "fn": "output = { result: path.dirname(input.path) }\n",
+      "ns": "path",
       "ports": {
         "input": {
           "path": {
@@ -52,6 +54,7 @@
     },
     "extname": {
       "fn": "output = { result: path.extname(input.path) }\n",
+      "ns": "path",
       "ports": {
         "input": {
           "path": {
@@ -69,6 +72,7 @@
     },
     "join": {
       "fn": "output = { result: path.join(input.path) }\n",
+      "ns": "path",
       "ports": {
         "input": {
           "path": {
@@ -86,6 +90,7 @@
     },
     "normalize": {
       "fn": "output = { result: path.normalize(input.path) }\n",
+      "ns": "path",
       "ports": {
         "input": {
           "path": {
@@ -103,6 +108,7 @@
     },
     "relative": {
       "fn": "output = { result: path.relative(input.from, input.to) }\n",
+      "ns": "path",
       "ports": {
         "input": {
           "from": {
@@ -123,6 +129,7 @@
     },
     "resolve": {
       "fn": "output = { result: path.resolve(input.from, input.to) }\n",
+      "ns": "path",
       "ports": {
         "input": {
           "from": {
