@@ -143,6 +143,6 @@
     }
   },
   "twigs": {
-    "name": "path"
+    "ns": "path"
   }
 }
