@@ -1,5 +1,5 @@
 {
-  "name": "chix-path",
+  "name": "path",
   "description": "Path components for Chiχ",
   "version": "0.0.1",
   "licences": [
@@ -142,5 +142,7 @@
       "name": "resolve"
     }
   },
-  "twigs": {}
+  "twigs": {
+    "name": "path"
+  }
 }
