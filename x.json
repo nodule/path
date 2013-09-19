@@ -14,8 +14,6 @@
   },
   "nodes": [
     {
-      "name": "basename",
-      "description": "Path basename",
       "ports": {
         "input": {
           "path": {
@@ -31,11 +29,30 @@
           }
         }
       },
-      "ns": "path"
+      "description": "Path basename",
+      "name": "basename",
+      "ns": "path",
+      "fn": "output = { result: path.basename(input.path, input.ext) }\n"
     },
     {
-      "name": "dirname",
+      "ports": {
+        "input": {
+          "path": {
+            "type": "string"
+          }
+        },
+        "output": {
+          "result": {
+            "type": "string"
+          }
+        }
+      },
       "description": "Path dirname",
+      "name": "dirname",
+      "ns": "path",
+      "fn": "output = { result: path.dirname(input.path) }\n"
+    },
+    {
       "ports": {
         "input": {
           "path": {
@@ -48,11 +65,12 @@
           }
         }
       },
-      "ns": "path"
-    },
-    {
-      "name": "extname",
       "description": "Path extname",
+      "name": "extname",
+      "ns": "path",
+      "fn": "output = { result: path.extname(input.path) }\n"
+    },
+    {
       "ports": {
         "input": {
           "path": {
@@ -65,11 +83,12 @@
           }
         }
       },
-      "ns": "path"
-    },
-    {
-      "name": "join",
       "description": "Path join",
+      "name": "join",
+      "ns": "path",
+      "fn": "output = { result: path.join(input.path) }\n"
+    },
+    {
       "ports": {
         "input": {
           "path": {
@@ -82,14 +101,18 @@
           }
         }
       },
-      "ns": "path"
-    },
-    {
-      "name": "normalize",
       "description": "Path normalize",
+      "name": "normalize",
+      "ns": "path",
+      "fn": "output = { result: path.normalize(input.path) }\n"
+    },
+    {
       "ports": {
         "input": {
-          "path": {
+          "from": {
+            "type": "string"
+          },
+          "to": {
             "type": "string"
           }
         },
@@ -99,31 +122,12 @@
           }
         }
       },
-      "ns": "path"
-    },
-    {
-      "name": "relative",
       "description": "Path relative",
-      "ports": {
-        "input": {
-          "from": {
-            "type": "string"
-          },
-          "to": {
-            "type": "string"
-          }
-        },
-        "output": {
-          "result": {
-            "type": "string"
-          }
-        }
-      },
-      "ns": "path"
+      "name": "relative",
+      "ns": "path",
+      "fn": "output = { result: path.relative(input.from, input.to) }\n"
     },
     {
-      "name": "resolve",
-      "description": "Path resolve",
       "ports": {
         "input": {
           "from": {
@@ -139,7 +143,10 @@
           }
         }
       },
-      "ns": "path"
+      "description": "Path resolve",
+      "name": "resolve",
+      "ns": "path",
+      "fn": "output = { result: path.resolve(input.from, input.to) }\n"
     }
   ],
   "twigs": []
