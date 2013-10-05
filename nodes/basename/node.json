@@ -4,14 +4,17 @@
   "ports": {
     "input": {
       "path": {
+        "title": "Path",
         "type": "string"
       },
       "ext": {
+        "title": "Extension",
         "type": "string"
       }
     },
     "output": {
       "result": {
+        "title": "Result",
         "type": "string"
       }
     }

@@ -4,14 +4,17 @@
   "ports": {
     "input": {
       "from": {
+        "title": "From",
         "type": "string"
       },
       "to": {
+        "title": "To",
         "type": "string"
       }
     },
     "output": {
       "result": {
+        "title": "Result",
         "type": "string"
       }
     }

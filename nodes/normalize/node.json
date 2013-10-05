@@ -4,11 +4,13 @@
   "ports": {
     "input": {
       "path": {
+        "title": "Path",
         "type": "string"
       }
     },
     "output": {
       "result": {
+        "title": "Result",
         "type": "string"
       }
     }

@@ -17,14 +17,17 @@
       "ports": {
         "input": {
           "path": {
+            "title": "Path",
             "type": "string"
           },
           "ext": {
+            "title": "Extension",
             "type": "string"
           }
         },
         "output": {
           "result": {
+            "title": "Result",
             "type": "string"
           }
         }
@@ -38,11 +41,13 @@
       "ports": {
         "input": {
           "path": {
+            "title": "Path",
             "type": "string"
           }
         },
         "output": {
           "result": {
+            "title": "Result",
             "type": "string"
           }
         }
@@ -56,11 +61,13 @@
       "ports": {
         "input": {
           "path": {
+            "title": "Path",
             "type": "string"
           }
         },
         "output": {
           "result": {
+            "title": "Result",
             "type": "string"
           }
         }
@@ -74,11 +81,13 @@
       "ports": {
         "input": {
           "path": {
+            "title": "Path",
             "type": "string"
           }
         },
         "output": {
           "result": {
+            "title": "Result",
             "type": "string"
           }
         }
@@ -92,11 +101,13 @@
       "ports": {
         "input": {
           "path": {
+            "title": "Path",
             "type": "string"
           }
         },
         "output": {
           "result": {
+            "title": "Result",
             "type": "string"
           }
         }
@@ -110,14 +121,17 @@
       "ports": {
         "input": {
           "from": {
+            "title": "From",
             "type": "string"
           },
           "to": {
+            "title": "To",
             "type": "string"
           }
         },
         "output": {
           "result": {
+            "title": "Result",
             "type": "string"
           }
         }
@@ -131,14 +145,17 @@
       "ports": {
         "input": {
           "from": {
+            "title": "From",
             "type": "string"
           },
           "to": {
+            "title": "To",
             "type": "string"
           }
         },
         "output": {
           "result": {
+            "title": "Result",
             "type": "string"
           }
         }
