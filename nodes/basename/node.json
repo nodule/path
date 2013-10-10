@@ -1,6 +1,9 @@
 {
   "name": "basename",
   "description": "Path basename",
+  "require": {
+    "path": "latest"
+  },
   "ports": {
     "input": {
       "path": {

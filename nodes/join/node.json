@@ -1,6 +1,9 @@
 {
   "name": "join",
   "description": "Path join",
+  "require": {
+    "path": "latest"
+  },
   "ports": {
     "input": {
       "path": {

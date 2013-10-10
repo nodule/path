@@ -1,6 +1,9 @@
 {
   "name": "relative",
   "description": "Path relative",
+  "require": {
+    "path": "latest"
+  },
   "ports": {
     "input": {
       "from": {

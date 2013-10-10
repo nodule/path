@@ -32,6 +32,9 @@
           }
         }
       },
+      "require": {
+        "path": "latest"
+      },
       "description": "Path basename",
       "name": "basename",
       "ns": "path",
@@ -51,6 +54,9 @@
             "type": "string"
           }
         }
+      },
+      "require": {
+        "path": "latest"
       },
       "description": "Path dirname",
       "name": "dirname",
@@ -72,6 +78,9 @@
           }
         }
       },
+      "require": {
+        "path": "latest"
+      },
       "description": "Path extname",
       "name": "extname",
       "ns": "path",
@@ -92,6 +101,9 @@
           }
         }
       },
+      "require": {
+        "path": "latest"
+      },
       "description": "Path join",
       "name": "join",
       "ns": "path",
@@ -111,6 +123,9 @@
             "type": "string"
           }
         }
+      },
+      "require": {
+        "path": "latest"
       },
       "description": "Path normalize",
       "name": "normalize",
@@ -136,6 +151,9 @@
           }
         }
       },
+      "require": {
+        "path": "latest"
+      },
       "description": "Path relative",
       "name": "relative",
       "ns": "path",
@@ -159,6 +177,9 @@
             "type": "string"
           }
         }
+      },
+      "require": {
+        "path": "latest"
       },
       "description": "Path resolve",
       "name": "resolve",

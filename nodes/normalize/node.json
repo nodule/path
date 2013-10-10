@@ -1,6 +1,9 @@
 {
   "name": "normalize",
   "description": "Path normalize",
+  "require": {
+    "path": "latest"
+  },
   "ports": {
     "input": {
       "path": {

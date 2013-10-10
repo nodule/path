@@ -1,6 +1,9 @@
 {
   "name": "resolve",
   "description": "Path resolve",
+  "require": {
+    "path": "latest"
+  },
   "ports": {
     "input": {
       "from": {

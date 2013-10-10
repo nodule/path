@@ -1,6 +1,9 @@
 {
   "name": "dirname",
   "description": "Path dirname",
+  "require": {
+    "path": "latest"
+  },
   "ports": {
     "input": {
       "path": {

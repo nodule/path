@@ -1,6 +1,9 @@
 {
   "name": "extname",
   "description": "Path extname",
+  "require": {
+    "path": "latest"
+  },
   "ports": {
     "input": {
       "path": {
