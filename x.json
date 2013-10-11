@@ -2,15 +2,10 @@
   "name": "path",
   "description": "Path components for Chiχ",
   "version": "0.0.3",
-  "licences": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/psichi/chix/raw/master/LICENSE"
-    }
-  ],
+  "licences": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psichi/chix-path.git"
+    "url": "https://github.com/nodule/path.git"
   },
   "nodes": [
     {
