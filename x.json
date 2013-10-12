@@ -2,7 +2,6 @@
   "name": "path",
   "description": "Path components for Chiχ",
   "version": "0.0.3",
-  "licences": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/nodule/path.git"
@@ -31,8 +30,8 @@
         "path": "latest"
       },
       "description": "Path basename",
-      "name": "basename",
       "ns": "path",
+      "name": "basename",
       "fn": "output = { result: path.basename(input.path, input.ext) }\n"
     },
     {
@@ -54,8 +53,8 @@
         "path": "latest"
       },
       "description": "Path dirname",
-      "name": "dirname",
       "ns": "path",
+      "name": "dirname",
       "fn": "output = { result: path.dirname(input.path) }\n"
     },
     {
@@ -77,8 +76,8 @@
         "path": "latest"
       },
       "description": "Path extname",
-      "name": "extname",
       "ns": "path",
+      "name": "extname",
       "fn": "output = { result: path.extname(input.path) }\n"
     },
     {
@@ -100,8 +99,8 @@
         "path": "latest"
       },
       "description": "Path join",
-      "name": "join",
       "ns": "path",
+      "name": "join",
       "fn": "output = { result: path.join(input.path) }\n"
     },
     {
@@ -123,8 +122,8 @@
         "path": "latest"
       },
       "description": "Path normalize",
-      "name": "normalize",
       "ns": "path",
+      "name": "normalize",
       "fn": "output = { result: path.normalize(input.path) }\n"
     },
     {
@@ -150,8 +149,8 @@
         "path": "latest"
       },
       "description": "Path relative",
-      "name": "relative",
       "ns": "path",
+      "name": "relative",
       "fn": "output = { result: path.relative(input.from, input.to) }\n"
     },
     {
@@ -177,8 +176,8 @@
         "path": "latest"
       },
       "description": "Path resolve",
-      "name": "resolve",
       "ns": "path",
+      "name": "resolve",
       "fn": "output = { result: path.resolve(input.from, input.to) }\n"
     }
   ],

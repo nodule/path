@@ -1,5 +1,6 @@
 {
   "name": "normalize",
+  "ns": "path",
   "description": "Path normalize",
   "require": {
     "path": "latest"

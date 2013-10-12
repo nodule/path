@@ -1,5 +1,6 @@
 {
   "name": "join",
+  "ns": "path",
   "description": "Path join",
   "require": {
     "path": "latest"

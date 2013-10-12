@@ -1,5 +1,6 @@
 {
   "name": "resolve",
+  "ns": "path",
   "description": "Path resolve",
   "require": {
     "path": "latest"

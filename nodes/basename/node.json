@@ -1,5 +1,6 @@
 {
   "name": "basename",
+  "ns": "path",
   "description": "Path basename",
   "require": {
     "path": "latest"

@@ -1,5 +1,6 @@
 {
   "name": "dirname",
+  "ns": "path",
   "description": "Path dirname",
   "require": {
     "path": "latest"

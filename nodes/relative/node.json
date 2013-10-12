@@ -1,5 +1,6 @@
 {
   "name": "relative",
+  "ns": "path",
   "description": "Path relative",
   "require": {
     "path": "latest"
