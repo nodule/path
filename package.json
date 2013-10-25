@@ -19,6 +19,7 @@
     "test": "chit"
   },
   "chix": {
-    "name": "path"
+    "name": "path",
+    "color": "rgb(84,90,134)"
   }
 }
