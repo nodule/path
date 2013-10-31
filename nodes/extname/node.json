@@ -2,6 +2,9 @@
   "name": "extname",
   "ns": "path",
   "description": "Path extname",
+  "phrases": {
+    "active": "Determine extension for {{input.path}}"
+  },
   "require": {
     "path": "latest"
   },

@@ -2,6 +2,9 @@
   "name": "relative",
   "ns": "path",
   "description": "Path relative",
+  "phrases": {
+    "active": "Determining relative path for {{input.path}}"
+  },
   "require": {
     "path": "latest"
   },

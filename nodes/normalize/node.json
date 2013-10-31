@@ -2,6 +2,9 @@
   "name": "normalize",
   "ns": "path",
   "description": "Path normalize",
+  "phrases": {
+    "active": "Normalizing path for {{input.path}}"
+  },
   "require": {
     "path": "latest"
   },

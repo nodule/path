@@ -2,6 +2,9 @@
   "name": "join",
   "ns": "path",
   "description": "Path join",
+  "phrases": {
+    "active": "Joining path for {{input.path}}"
+  },
   "require": {
     "path": "latest"
   },

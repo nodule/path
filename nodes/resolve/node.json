@@ -2,6 +2,9 @@
   "name": "resolve",
   "ns": "path",
   "description": "Path resolve",
+  "phrases": {
+    "active": "Resolving path for {{input.path}}"
+  },
   "require": {
     "path": "latest"
   },

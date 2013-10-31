@@ -2,6 +2,9 @@
   "name": "dirname",
   "ns": "path",
   "description": "Path dirname",
+  "phrases": {
+    "active": "Getting dirname for {{input.path}}"
+  },
   "require": {
     "path": "latest"
   },

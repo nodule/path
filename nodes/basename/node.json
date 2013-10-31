@@ -5,6 +5,9 @@
   "require": {
     "path": "latest"
   },
+  "phrases": {
+    "active": "Getting basename for {{input.path}} and extension {{input.ext}}"
+  },
   "ports": {
     "input": {
       "path": {
