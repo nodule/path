@@ -10,9 +10,9 @@
   },
   "ports": {
     "input": {
-      "path": {
+      "in": {
         "title": "Path",
-        "type": "string"
+        "type": "array"
       }
     },
     "output": {

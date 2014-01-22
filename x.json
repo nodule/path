@@ -92,9 +92,9 @@
     {
       "ports": {
         "input": {
-          "path": {
+          "in": {
             "title": "Path",
-            "type": "string"
+            "type": "array"
           }
         },
         "output": {
@@ -113,7 +113,7 @@
       "description": "Path join",
       "ns": "path",
       "name": "join",
-      "fn": "output = { result: path.join(input.path) }\n"
+      "fn": "output = { result: path.join.apply(null, input.in) }\n"
     },
     {
       "ports": {
