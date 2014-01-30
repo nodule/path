@@ -1,1 +1,3 @@
-output = { result: path.resolve(input.from, input.to) }
+output = {
+  result: path.resolve(input.from, input.to)
+}

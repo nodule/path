@@ -1,1 +1,3 @@
-output = { result: path.extname(input.path) }
+output = {
+  result: path.extname(input.path)
+}

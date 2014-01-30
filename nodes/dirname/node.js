@@ -1,1 +1,3 @@
-output = { result: path.dirname(input.path) }
+output = {
+  result: path.dirname(input.path)
+}

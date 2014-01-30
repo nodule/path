@@ -1,1 +1,3 @@
-output = { result: path.join.apply(null, input.in) }
+output = {
+  result: path.join.apply(null, input. in )
+}
