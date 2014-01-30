@@ -35,7 +35,7 @@
       "description": "Path basename",
       "ns": "path",
       "name": "basename",
-      "fn": "output = { result: path.basename(input.path, input.ext) }\n"
+      "fn": "output = {\n  result: path.basename(input.path, input.ext)\n}\n"
     },
     {
       "ports": {
@@ -61,7 +61,7 @@
       "description": "Path dirname",
       "ns": "path",
       "name": "dirname",
-      "fn": "output = { result: path.dirname(input.path) }\n"
+      "fn": "output = {\n  result: path.dirname(input.path)\n}\n"
     },
     {
       "ports": {
@@ -87,7 +87,7 @@
       "description": "Path extname",
       "ns": "path",
       "name": "extname",
-      "fn": "output = { result: path.extname(input.path) }\n"
+      "fn": "output = {\n  result: path.extname(input.path)\n}\n"
     },
     {
       "ports": {
@@ -113,7 +113,7 @@
       "description": "Path join",
       "ns": "path",
       "name": "join",
-      "fn": "output = { result: path.join.apply(null, input.in) }\n"
+      "fn": "output = {\n  result: path.join.apply(null, input. in )\n}\n"
     },
     {
       "ports": {
@@ -139,7 +139,7 @@
       "description": "Path normalize",
       "ns": "path",
       "name": "normalize",
-      "fn": "output = { result: path.normalize(input.path) }\n"
+      "fn": "output = {\n  result: path.normalize(input.path)\n}\n"
     },
     {
       "ports": {
@@ -169,7 +169,7 @@
       "description": "Path relative",
       "ns": "path",
       "name": "relative",
-      "fn": "output = { result: path.relative(input.from, input.to) }\n"
+      "fn": "output = {\n  result: path.relative(input.from, input.to)\n}\n"
     },
     {
       "ports": {
@@ -199,7 +199,7 @@
       "description": "Path resolve",
       "ns": "path",
       "name": "resolve",
-      "fn": "output = { result: path.resolve(input.from, input.to) }\n"
+      "fn": "output = {\n  result: path.resolve(input.from, input.to)\n}\n"
     }
   ],
   "twigs": []
