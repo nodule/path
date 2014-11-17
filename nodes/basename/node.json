@@ -2,9 +2,6 @@
   "name": "basename",
   "ns": "path",
   "description": "Path basename",
-  "require": {
-    "path": "latest"
-  },
   "phrases": {
     "active": "Getting basename for {{input.path}} and extension {{input.ext}}"
   },
@@ -24,6 +21,11 @@
         "title": "Result",
         "type": "string"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "path": "latest"
     }
   }
 }

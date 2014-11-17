@@ -8,6 +8,11 @@
   },
   "nodes": [
     {
+      "dependencies": {
+        "npm": {
+          "path": "latest"
+        }
+      },
       "ports": {
         "input": {
           "path": {
@@ -29,15 +34,17 @@
       "phrases": {
         "active": "Getting basename for {{input.path}} and extension {{input.ext}}"
       },
-      "require": {
-        "path": "latest"
-      },
       "description": "Path basename",
       "ns": "path",
       "name": "basename",
       "fn": "output = {\n  result: path.basename(input.path, input.ext)\n}\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "path": "latest"
+        }
+      },
       "ports": {
         "input": {
           "path": {
@@ -51,9 +58,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "path": "latest"
       },
       "phrases": {
         "active": "Getting dirname for {{input.path}}"
@@ -64,6 +68,11 @@
       "fn": "output = {\n  result: path.dirname(input.path)\n}\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "path": "latest"
+        }
+      },
       "ports": {
         "input": {
           "path": {
@@ -78,9 +87,6 @@
           }
         }
       },
-      "require": {
-        "path": "latest"
-      },
       "phrases": {
         "active": "Determine extension for {{input.path}}"
       },
@@ -90,6 +96,11 @@
       "fn": "output = {\n  result: path.extname(input.path)\n}\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "path": "latest"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -104,9 +115,6 @@
           }
         }
       },
-      "require": {
-        "path": "latest"
-      },
       "phrases": {
         "active": "Joining path for {{input.path}}"
       },
@@ -116,6 +124,11 @@
       "fn": "output = {\n  result: path.join.apply(null, input. in )\n}\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "path": "latest"
+        }
+      },
       "ports": {
         "input": {
           "path": {
@@ -130,9 +143,6 @@
           }
         }
       },
-      "require": {
-        "path": "latest"
-      },
       "phrases": {
         "active": "Normalizing path for {{input.path}}"
       },
@@ -142,6 +152,11 @@
       "fn": "output = {\n  result: path.normalize(input.path)\n}\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "path": "latest"
+        }
+      },
       "ports": {
         "input": {
           "from": {
@@ -159,9 +174,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "path": "latest"
       },
       "phrases": {
         "active": "Determining relative path for {{input.path}}"
@@ -172,6 +184,11 @@
       "fn": "output = {\n  result: path.relative(input.from, input.to)\n}\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "path": "latest"
+        }
+      },
       "ports": {
         "input": {
           "from": {
@@ -189,9 +206,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "path": "latest"
       },
       "phrases": {
         "active": "Resolving path for {{input.path}}"

@@ -5,9 +5,6 @@
   "phrases": {
     "active": "Determine extension for {{input.path}}"
   },
-  "require": {
-    "path": "latest"
-  },
   "ports": {
     "input": {
       "path": {
@@ -20,6 +17,11 @@
         "title": "Result",
         "type": "string"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "path": "latest"
     }
   }
 }
