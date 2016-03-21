@@ -1,3 +1,1 @@
-output = {
-  result: path.relative($.from, $.to)
-}
+output = {result: $.create(path.relative($.from, $.to))}

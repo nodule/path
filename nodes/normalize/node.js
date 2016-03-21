@@ -1,3 +1,1 @@
-output = {
-  result: path.normalize($.path)
-}
+output = {result: $.create(path.normalize($.path))}

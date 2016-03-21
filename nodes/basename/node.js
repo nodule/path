@@ -1,3 +1,1 @@
-output = {
-  result: path.basename($.path, $.ext)
-}
+output = {result: $.create(path.basename($.path, $.ext))}

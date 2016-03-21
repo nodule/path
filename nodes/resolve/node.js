@@ -1,3 +1,1 @@
-output = {
-  result: path.resolve($.from, $.to)
-}
+output = {result: $.create(path.resolve($.from, $.to))}

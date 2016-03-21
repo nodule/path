@@ -1,3 +1,1 @@
-output = {
-  result: path.extname($.path)
-}
+output = {result: $.create(path.extname($.path))}

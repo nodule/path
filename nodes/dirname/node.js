@@ -1,3 +1,1 @@
-output = {
-  result: path.dirname($.path)
-}
+output = {result: $.create(path.dirname($.path))}
