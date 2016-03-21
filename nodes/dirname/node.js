@@ -1,3 +1,3 @@
 output = {
-  result: path.dirname(input.path)
+  result: path.dirname($.path)
 }

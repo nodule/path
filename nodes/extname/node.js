@@ -1,3 +1,3 @@
 output = {
-  result: path.extname(input.path)
+  result: path.extname($.path)
 }

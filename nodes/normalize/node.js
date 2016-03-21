@@ -1,3 +1,3 @@
 output = {
-  result: path.normalize(input.path)
+  result: path.normalize($.path)
 }

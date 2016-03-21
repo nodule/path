@@ -1,3 +1,3 @@
 output = {
-  result: path.resolve(input.from, input.to)
+  result: path.resolve($.from, $.to)
 }

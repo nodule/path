@@ -1,3 +1,3 @@
 output = {
-  result: path.basename(input.path, input.ext)
+  result: path.basename($.path, $.ext)
 }

@@ -1,3 +1,3 @@
 output = {
-  result: path.relative(input.from, input.to)
+  result: path.relative($.from, $.to)
 }
