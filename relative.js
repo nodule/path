@@ -28,10 +28,10 @@ module.exports = {
       path: require('path')
     }
   },
-  fn: function relative(input, output, state, done, cb, on, path) {
+  fn: function relative(input, $, output, state, done, cb, on, path) {
     var r = function() {
       output = {
-        result: path.relative(input.from, input.to)
+        result: $.create(path.relative($.from, $.to))
       }
     }.call(this);
     return {

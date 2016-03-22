@@ -37,7 +37,7 @@
       "description": "Path basename",
       "ns": "path",
       "name": "basename",
-      "fn": "output = {\n  result: path.basename(input.path, input.ext)\n}\n"
+      "fn": "output = {result: $.create(path.basename($.path, $.ext))}\n"
     },
     {
       "dependencies": {
@@ -65,7 +65,7 @@
       "description": "Path dirname",
       "ns": "path",
       "name": "dirname",
-      "fn": "output = {\n  result: path.dirname(input.path)\n}\n"
+      "fn": "output = {result: $.create(path.dirname($.path))}\n"
     },
     {
       "dependencies": {
@@ -93,7 +93,7 @@
       "description": "Path extname",
       "ns": "path",
       "name": "extname",
-      "fn": "output = {\n  result: path.extname(input.path)\n}\n"
+      "fn": "output = {result: $.create(path.extname($.path))}\n"
     },
     {
       "dependencies": {
@@ -121,7 +121,7 @@
       "description": "Path join",
       "ns": "path",
       "name": "join",
-      "fn": "output = {\n  result: path.join.apply(null, input. in )\n}\n"
+      "fn": "output = {\n  result: path.join.apply(null, $. in )\n}\n"
     },
     {
       "dependencies": {
@@ -149,7 +149,7 @@
       "description": "Path normalize",
       "ns": "path",
       "name": "normalize",
-      "fn": "output = {\n  result: path.normalize(input.path)\n}\n"
+      "fn": "output = {result: $.create(path.normalize($.path))}\n"
     },
     {
       "dependencies": {
@@ -181,7 +181,7 @@
       "description": "Path relative",
       "ns": "path",
       "name": "relative",
-      "fn": "output = {\n  result: path.relative(input.from, input.to)\n}\n"
+      "fn": "output = {result: $.create(path.relative($.from, $.to))}\n"
     },
     {
       "dependencies": {
@@ -213,7 +213,7 @@
       "description": "Path resolve",
       "ns": "path",
       "name": "resolve",
-      "fn": "output = {\n  result: path.resolve(input.from, input.to)\n}\n"
+      "fn": "output = {result: $.create(path.resolve($.from, $.to))}\n"
     }
   ],
   "twigs": []

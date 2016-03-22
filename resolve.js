@@ -28,10 +28,10 @@ module.exports = {
       path: require('path')
     }
   },
-  fn: function resolve(input, output, state, done, cb, on, path) {
+  fn: function resolve(input, $, output, state, done, cb, on, path) {
     var r = function() {
       output = {
-        result: path.resolve(input.from, input.to)
+        result: $.create(path.resolve($.from, $.to))
       }
     }.call(this);
     return {

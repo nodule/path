@@ -28,10 +28,10 @@ module.exports = {
       path: require('path')
     }
   },
-  fn: function basename(input, output, state, done, cb, on, path) {
+  fn: function basename(input, $, output, state, done, cb, on, path) {
     var r = function() {
       output = {
-        result: path.basename(input.path, input.ext)
+        result: $.create(path.basename($.path, $.ext))
       }
     }.call(this);
     return {

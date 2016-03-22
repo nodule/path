@@ -24,10 +24,10 @@ module.exports = {
       path: require('path')
     }
   },
-  fn: function normalize(input, output, state, done, cb, on, path) {
+  fn: function normalize(input, $, output, state, done, cb, on, path) {
     var r = function() {
       output = {
-        result: path.normalize(input.path)
+        result: $.create(path.normalize($.path))
       }
     }.call(this);
     return {

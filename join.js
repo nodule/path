@@ -24,10 +24,10 @@ module.exports = {
       path: require('path')
     }
   },
-  fn: function join(input, output, state, done, cb, on, path) {
+  fn: function join(input, $, output, state, done, cb, on, path) {
     var r = function() {
       output = {
-        result: path.join.apply(null, input.in)
+        result: path.join.apply(null, $.in)
       }
     }.call(this);
     return {

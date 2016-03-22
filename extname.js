@@ -24,10 +24,10 @@ module.exports = {
       path: require('path')
     }
   },
-  fn: function extname(input, output, state, done, cb, on, path) {
+  fn: function extname(input, $, output, state, done, cb, on, path) {
     var r = function() {
       output = {
-        result: path.extname(input.path)
+        result: $.create(path.extname($.path))
       }
     }.call(this);
     return {
