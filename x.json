@@ -8,10 +8,11 @@
   },
   "nodes": [
     {
-      "dependencies": {
-        "npm": {
-          "path": "latest"
-        }
+      "name": "basename",
+      "ns": "path",
+      "description": "Path basename",
+      "phrases": {
+        "active": "Getting basename for {{input.path}} and extension {{input.ext}}"
       },
       "ports": {
         "input": {
@@ -31,47 +32,47 @@
           }
         }
       },
-      "phrases": {
-        "active": "Getting basename for {{input.path}} and extension {{input.ext}}"
+      "dependencies": {
+        "npm": {
+          "path": "latest"
+        }
       },
-      "description": "Path basename",
-      "ns": "path",
-      "name": "basename",
       "fn": "output = {result: $.create(path.basename($.path, $.ext))}\n"
     },
     {
-      "dependencies": {
-        "npm": {
-          "path": "latest"
-        }
-      },
-      "ports": {
-        "input": {
-          "path": {
-            "title": "Path",
-            "type": "string"
-          }
-        },
-        "output": {
-          "result": {
-            "title": "Result",
-            "type": "string"
-          }
-        }
-      },
+      "name": "dirname",
+      "ns": "path",
+      "description": "Path dirname",
       "phrases": {
         "active": "Getting dirname for {{input.path}}"
       },
-      "description": "Path dirname",
-      "ns": "path",
-      "name": "dirname",
-      "fn": "output = {result: $.create(path.dirname($.path))}\n"
-    },
-    {
+      "ports": {
+        "input": {
+          "path": {
+            "title": "Path",
+            "type": "string"
+          }
+        },
+        "output": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        }
+      },
       "dependencies": {
         "npm": {
           "path": "latest"
         }
+      },
+      "fn": "output = {result: $.create(path.dirname($.path))}\n"
+    },
+    {
+      "name": "extname",
+      "ns": "path",
+      "description": "Path extname",
+      "phrases": {
+        "active": "Determine extension for {{input.path}}"
       },
       "ports": {
         "input": {
@@ -87,19 +88,19 @@
           }
         }
       },
-      "phrases": {
-        "active": "Determine extension for {{input.path}}"
-      },
-      "description": "Path extname",
-      "ns": "path",
-      "name": "extname",
-      "fn": "output = {result: $.create(path.extname($.path))}\n"
-    },
-    {
       "dependencies": {
         "npm": {
           "path": "latest"
         }
+      },
+      "fn": "output = {result: $.create(path.extname($.path))}\n"
+    },
+    {
+      "name": "join",
+      "ns": "path",
+      "description": "Path join",
+      "phrases": {
+        "active": "Joining path for {{input.path}}"
       },
       "ports": {
         "input": {
@@ -115,19 +116,19 @@
           }
         }
       },
-      "phrases": {
-        "active": "Joining path for {{input.path}}"
-      },
-      "description": "Path join",
-      "ns": "path",
-      "name": "join",
-      "fn": "output = {\n  result: path.join.apply(null, $. in )\n}\n"
-    },
-    {
       "dependencies": {
         "npm": {
           "path": "latest"
         }
+      },
+      "fn": "output = {\n  result: $.write('in', path.join.apply(null, $.in))\n}\n"
+    },
+    {
+      "name": "normalize",
+      "ns": "path",
+      "description": "Path normalize",
+      "phrases": {
+        "active": "Normalizing path for {{input.path}}"
       },
       "ports": {
         "input": {
@@ -143,51 +144,51 @@
           }
         }
       },
-      "phrases": {
-        "active": "Normalizing path for {{input.path}}"
+      "dependencies": {
+        "npm": {
+          "path": "latest"
+        }
       },
-      "description": "Path normalize",
-      "ns": "path",
-      "name": "normalize",
       "fn": "output = {result: $.create(path.normalize($.path))}\n"
     },
     {
-      "dependencies": {
-        "npm": {
-          "path": "latest"
-        }
-      },
-      "ports": {
-        "input": {
-          "from": {
-            "title": "From",
-            "type": "string"
-          },
-          "to": {
-            "title": "To",
-            "type": "string"
-          }
-        },
-        "output": {
-          "result": {
-            "title": "Result",
-            "type": "string"
-          }
-        }
-      },
+      "name": "relative",
+      "ns": "path",
+      "description": "Path relative",
       "phrases": {
         "active": "Determining relative path for {{input.path}}"
       },
-      "description": "Path relative",
-      "ns": "path",
-      "name": "relative",
-      "fn": "output = {result: $.create(path.relative($.from, $.to))}\n"
-    },
-    {
+      "ports": {
+        "input": {
+          "from": {
+            "title": "From",
+            "type": "string"
+          },
+          "to": {
+            "title": "To",
+            "type": "string"
+          }
+        },
+        "output": {
+          "result": {
+            "title": "Result",
+            "type": "string"
+          }
+        }
+      },
       "dependencies": {
         "npm": {
           "path": "latest"
         }
+      },
+      "fn": "output = {result: $.create(path.relative($.from, $.to))}\n"
+    },
+    {
+      "name": "resolve",
+      "ns": "path",
+      "description": "Path resolve",
+      "phrases": {
+        "active": "Resolving path for {{input.path}}"
       },
       "ports": {
         "input": {
@@ -207,14 +208,12 @@
           }
         }
       },
-      "phrases": {
-        "active": "Resolving path for {{input.path}}"
+      "dependencies": {
+        "npm": {
+          "path": "latest"
+        }
       },
-      "description": "Path resolve",
-      "ns": "path",
-      "name": "resolve",
       "fn": "output = {result: $.create(path.resolve($.from, $.to))}\n"
     }
-  ],
-  "twigs": []
+  ]
 }

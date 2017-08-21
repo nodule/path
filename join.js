@@ -27,7 +27,7 @@ module.exports = {
   fn: function join(input, $, output, state, done, cb, on, path) {
     var r = function() {
       output = {
-        result: path.join.apply(null, $.in)
+        result: $.write('in', path.join.apply(null, $.in))
       }
     }.call(this);
     return {

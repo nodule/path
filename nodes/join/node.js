@@ -1,3 +1,3 @@
 output = {
-  result: path.join.apply(null, $. in )
+  result: $.write('in', path.join.apply(null, $.in))
 }
